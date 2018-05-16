@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-sm-4">
+    <div class="mb-2">
+      <progressbar [value]="55"></progressbar>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="mb-2">
+      <progressbar [value]="22" type="warning" [striped]="true">22%</progressbar>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="mb-2">
+      <progressbar max="200" [value]="num" type="danger" [striped]="true" [animate]="true">
+        <i>{{num}} / 200</i>
+      </progressbar>
+    </div>
+  </div>
+</div>
+
+<div [ngSwitch]='status'>
+  <div *ngSwitchCase="'loading'">
+    <!-- all of the inline styles and massive SVG markup for my spinner -->
+    <div class="grey-box"></div>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span> 
+  </div>
+  <div *ngSwitchCase="'active'">
+
+    <app-spinner *ngIf="showSpinner"></app-spinner>
+  </div>
+</div>
+
+<ngb-rating class="star" [(rate)]="selected" (hover)="hovered=$event" (leave)="hovered=0" [readonly]="readonly" (click)="readonly='true'"></ngb-rating>
+<hr>
+<pre>
+Selected: <b>{{selected}}</b>
+Hovered: <b>{{hovered}}</b>
+</pre>
+<!-- <button class="btn btn-sm btn-outline-{{readonly ? 'danger' : 'success'}}" (click)="readonly = !readonly">
+  {{ readonly ? "readonly" : "editable"}}
+</button> -->

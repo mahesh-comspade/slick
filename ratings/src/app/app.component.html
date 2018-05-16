@@ -1,0 +1,78 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+
+<!-- <ngb-rating [(rate)]="currentRate"></ngb-rating>
+<hr>
+<pre>Rate: <b>{{currentRate}}</b></pre> -->
+
+
+<!-- <ngb-rating [(rate)]="selected" (hover)="hovered=$event" (leave)="hovered=0" [readonly]="readonly"></ngb-rating>
+<hr>
+<pre>
+Selected: <b>{{selected}}</b>
+Hovered: <b>{{hovered}}</b>
+</pre>
+<button class="btn btn-sm btn-outline-{{readonly ? 'danger' : 'success'}}" (click)="readonly = !readonly">
+  {{ readonly ? "readonly" : "editable"}}
+</button> -->
+
+<!-- <p>Custom rating template provided as child element</p>
+
+<ngb-rating [(rate)]="currentRate"  [readonly]="readonly" (click)="show()">
+  <ng-template let-fill="fill" let-index="index"  >
+    <span class="star" [class.filled]="fill === 100" >&#9733;</span>
+  </ng-template>
+</ngb-rating>
+<hr>
+<pre>Rate: <b>{{currentRate}}</b></pre> -->
+
+<!-- <ngb-rating [(rate)]="currentRate1"  [readonly]="true" max = 1>
+  <ng-template let-fill="fill" let-index="index"  >
+    <span class="star" [style.width.%]="fill === 100" >&#9733;
+      <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
+    </span>
+  </ng-template>
+</ngb-rating>
+<hr> -->
+
+<!-- <p>Custom rating template provided via a variable. Shows fine-grained rating display</p>
+
+<ng-template #t let-fill="fill">
+  <span class="star" [class.full]="fill === 100">
+    <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
+  </span>
+</ng-template>
+
+<ngb-rating [(rate)]="currentRate1" [starTemplate]="t" [readonly]="true" max="1" (click)="value='true'"></ngb-rating>
+
+<hr>
+<pre>Rate: <b>{{currentRate}}</b></pre>
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="currentRate = 0.35">1.35</button>
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="currentRate = 0.72">4.72</button> -->
+
+
+<!-- <p>NgModel and reactive forms can be used without the 'rate' binding</p>
+
+<div class="form-group">
+  <ngb-rating [formControl]="ctrl"></ngb-rating>
+  <div class="form-text small">
+    <div *ngIf="ctrl.valid" class="text-success">Thanks!</div>
+    <div *ngIf="ctrl.invalid" class="text-danger">Please rate us</div>
+  </div>
+</div>
+
+<hr>
+<pre>Model: <b>{{ ctrl.value }}</b></pre>
+<button class="btn btn-sm btn-outline-{{ ctrl.disabled ? 'danger' : 'success'}} mr-2" (click)="toggle()">
+  {{ ctrl.disabled ? "control disabled" : " control enabled" }}
+</button>
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="ctrl.setValue(null)">Clear</button> -->
+
+
+<app-trail></app-trail>
+<!-- <app-spinner *ngIf="showSpinner"></app-spinner> -->
