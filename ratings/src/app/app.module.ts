@@ -5,6 +5,7 @@ import { ProgressbarModule } from 'ngx-bootstrap';
 import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {MatSidenavModule} from '@angular/material/sidenav';
 // import {FormControl, Validators} from '@angular/forms';
 
 
@@ -20,7 +21,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     SpinnerComponent
   ],
   imports: [
-    BrowserModule,FormsModule,HttpClientModule,
+    BrowserModule,FormsModule,HttpClientModule,MatSidenavModule,
     NgbModule.forRoot(),
     TooltipModule.forRoot(),
     ProgressbarModule.forRoot(),
