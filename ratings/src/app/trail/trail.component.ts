@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
+import { SlickModule } from 'ngx-slick';
+
 @Component({
   selector: 'app-trail',
   templateUrl: './trail.component.html',
@@ -43,4 +45,5 @@ export class TrailComponent implements OnInit {
     }
   }
 
+  
 }

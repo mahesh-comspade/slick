@@ -6,6 +6,7 @@ import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { SlickModule } from 'ngx-slick';
 // import {FormControl, Validators} from '@angular/forms';
 
 
@@ -25,7 +26,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     NgbModule.forRoot(),
     TooltipModule.forRoot(),
     ProgressbarModule.forRoot(),
-    CollapseModule.forRoot(), BsDropdownModule.forRoot()
+    CollapseModule.forRoot(), BsDropdownModule.forRoot(),SlickModule.forRoot()
     // FormControl, Validators
   ],
   providers: [],
