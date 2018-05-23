@@ -9,15 +9,15 @@ export class AppComponent {
   title = 'app';
 
    slides = [
-    {img: "http://placehold.it/350x150/"},
-    {img: "http://placehold.it/350x150/111111"},
-    {img: "http://placehold.it/350x150/333333"},
-    {img: "http://localhost/1.png"}
+    {img: 'http://placehold.it/350x150/'},
+    {img: 'http://placehold.it/350x150/111111'},
+    {img: 'http://placehold.it/350x150/333333'},
+    {img: 'http://localhost/1.png'}
   ];
-  slideConfig = {"slidesToShow": 2, "slidesToScroll": 2, "dots": true, "infinite": true, "autoplay": true, "autoplaySpeed": 2000};
+  slideConfig = {'slidesToShow': 2, 'slidesToScroll': 1, 'dots': true, 'infinite': true, 'autoplay': true, 'autoplaySpeed': 1000};
 
   addSlide() {
-    this.slides.push({img: "https://avatars3.githubusercontent.com/u/1925733?s=88&v=4"})
+    this.slides.push({img: 'https://avatars3.githubusercontent.com/u/1925733?s=88&v=4'});
   }
 
   removeSlide() {

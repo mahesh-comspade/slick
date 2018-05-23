@@ -2,20 +2,25 @@
   App works!!
 </p>
 
-  <!-- You can now use your library component in app.component.html -->
+<!-- You can now use your library component in app.component.html -->
+<div class="container my">
   <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
     <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-          <img src="{{ slide.img }}" alt="" width="100%">
-          <!-- <img src="../src/assets/1.png" alt="Maahi" width="100%"> -->
-          <!-- <mark>Mahesh</mark> -->
+      <img src="{{ slide.img }}" alt="" height="250px" width="100%">
     </div>
-</ngx-slick>
-
-<button (click)="addSlide()">Add</button>
-<button (click)="removeSlide()">Remove</button>
-<button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
-<button (click)="slickModal.unslick()">unslick</button>
-
+  </ngx-slick>
+  <button (click)="addSlide()">Add</button>
+  <button (click)="removeSlide()">Remove</button>
+  <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+  <button (click)="slickModal.unslick()">unslick</button>
+</div>
 <!-- <slick dots="true" infinite="false" speed="300" slides-to-show="5" touch-move="false" slides-to-scroll="1">
   ...
 </slick> -->
+
+<!-- <slick infinite=true slides-to-show=3 slides-to-scroll=3>
+  ...
+  </slick> -->
+
+  <p>Mahesh ajsdjjnkjasnkjdA:SKSJKj</p>
+<app-slick class="my1"></app-slick>
