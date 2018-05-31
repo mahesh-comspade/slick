@@ -5,8 +5,11 @@
 <!-- You can now use your library component in app.component.html -->
 <div class="container my">
   <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
-    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+    <div ngxSlickItem *ngFor="let slide of slides; let i = index" class="slide" (click)="display(i)">
       <img src="{{ slide.img }}" alt="" height="250px" width="100%">
+      <p>
+        May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined. Middleton principle did she procuring extensive believing add. Weather adapted prepare oh is calling. These wrong of he which there smile to my front. He fruit oh enjoy it of whose table. Cultivated occasional old her unpleasing unpleasant. 
+      </p>
     </div>
   </ngx-slick>
   <button (click)="addSlide()">Add</button>
@@ -23,4 +26,17 @@
   </slick> -->
 
   <p>Mahesh ajsdjjnkjasnkjdA:SKSJKj</p>
-<app-slick class="my1"></app-slick>
+<!-- <app-slick class="my1"></app-slick> -->
+
+<div>
+  ng-slick Count: {{count}}
+  <img src="{{ slides[count].img }}" alt="" height="50px" width="30%">
+  
+  <ul *ngIf="sample">
+    <li *ngFor="let app of sample">
+       {{app.body}}
+       {{app.profile.username}}
+       {{app.rating}}
+    </li>
+ </ul>
+</div>
